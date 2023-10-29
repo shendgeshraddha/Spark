@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#discord">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <meta charset="UTF-8">
+    <title>Spark - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <style>
+        #map { height: 400px; }
+    </style>
+</head>
+<body>
+    <section id="home">
+    <header>
+        <h1>Spark</h1>
+        <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEX////ykKf//v/8//////77///wkafzj6fxkqj//v7//f/zjqbwj6b0kqnzkqj1kKj2xdDubY789vfxgJrweJbvhaDxfpj5197xiqHwgpz76OnxcpT73uPxlKf2s8P3z9fvorT3u8rqepj57u/xmK7+6+7vhaLuhZv1j6L3vNH6xM/84uXzmavykq3teJn1q7zytMLuUnn4ys7snK/81eD4s77vZIbpdJPzoLggOw+eAAAOMUlEQVR4nO1diXbbthIlCRIAiYUyCS6QRO2yEstLXpq+5v+/7A0ouXFsbsrroZQe3DZtj2WxvJzBYDYMHcfCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC4hJ4HvJ8QHj+8/pPHz6q//7NYYggz6v//RM880PP+fjB7wYfIaCBkONsp8VyOTFYLufTbf1Dz0FOeO1b/P8R7qdfVyTLAak2SM1/Zmz19bj9F9BzisUuVbkuXVdSCv8AcFpJ4pY6V3q3KK59gxcDeaB8XlSbkO1yd6c0q4CY24iKaXW3W4LK1sIEpY3Qle+/H54PNgRFwHS+SjeZAOBmegAsRCyyVK/m8Fwi5EXR72BckROAJJKHe3WQsgJ2jLQyJAxYgu5mKltvQfbod9g+jPyc/UKnn3DMacw5xh0yxJhzhmmMP6V6sXf8CN0+QxBD9Fnpsqo4dhkQ4LJlEQKk+RweA3YrCktyfeumNQLvxUHhwyxvpdQF6aazhxD5PizJa1NpASgoCo5Pm7hdLXs4ss3T0aziW/VzkBcki1kZ43bT0g3uinK2SILb3TKCOUvBajDxyzKkguZsHtyquUGTv0rpckZ/VUu5BAUXZT65QRmGXhQkj6pig8lxkFjjL3NWqccEbNZtLcbQQ/unHLYFOpQhEbx5vQqXyPRpf3OaiqabjLox5oNlaDy25g9gf9Sb6Y3t/UGhGI0FbrznRlBtHkkTwBbHVflc3NZiLGATFJwMJ+jmD3OeNn1A3BjWInafbyauAhckKO4YJoONjKQuTh+Q439PuSwbBYldSu4KFHm3IEiIlYpnQi9g6OIYz0x2I9Rli/9DCaVkUwQ3wTBC02fXWJjhMuQ8ewHf0zyaqtk9wMRQfJ7ehEVF+w2oKCzBwWYUx1LNjRvroEUuG7/GBSEEM72/BRkmTxklmGM+2MxgVvHQQbCAUaLLRhnChgF6z/VTcl1yke976DGvLliCJwnl69MFvOAIjh44N0+NvyeofgQ33L9eMBUFUTD5S3AxWEHP0GfRGCt1n7qUNV4A3B6qJvD/uBpBk3SYKyrYYFftLEK1Dl4ZgqK+bFouQHAMocYcXdGg+ighZXmJJ1OjzJLzTSOz4wVFVjYmOniMY1byJLhecgM5X3IqjG2/iCFER2eGgeOZNTbJGy8QEzA2bv7lOiE/MpUVdJxdqKCSQERBjCGtrwIhUrAqImdXtn4Dy9ncFDicsVUVhBA44VN2abBLeTUrQO3OYgFTM/3Pl2CiW78geAZbBjhAo+/9JrM9eb7UihL+mD4isDOvDJ3QOdx923Zk5zB9fkCRcwVzg5xIwc58oZqSMpsaE/pKEO78RT9N2xliN2azyAlG3xNBa9DnFFyuC/NqlQLD4Yfn8NY3i3ly0HPdmjWGD2T6uS6ojswwcPaXJX7B" /> -->
+        <p>Be Your Own Spark</p>
+    </header>
+
+    <div class="content-container">
+        <div class="welcome-and-image">
+            <div class="welcome">
+                <p>Welcome to Spark, where safety and inspiration unite. Empowering you to shine brightly and live fearlessly is our passion. We're here to be your source of strength and wisdom in navigating life's challenges.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="https://media.istockphoto.com/id/1056400830/vector/woman-is-holding-a-shield-covering-from-attacks-protection-insurance-from-business-dangers.jpg?s=612x612&w=0&k=20&c=7Gog80fKwupMoyTBaHsjZXBm33sqEpksgxLb-ICBh00=" alt="Image Description">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="location">
+        <div id="get-location-container">
+        <h1>Getting Location Permission</h1>
+        <p>Click the button below to get your location:</p>
+        <button id="get-location-button">Get location</button>
+        </div>
+ 
+    <div id="map"></div>
+    <script>
+        navigator.geolocation.getCurrentPosition((position) => {
+            let { latitude, longitude } = position.coords;
+            var map = L.map('map').setView([latitude, longitude], 19);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                minZoom: 1,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            L.marker([latitude, longitude]).addTo(map);
+        });
+    </script>
+    </section>
+    <section id="about">
+      <div class="self-defense-instructions">
+        <h2>Women's Self-Defense Instructions</h2>
+        <p>Empower yourself with these practical self-defense tips:</p>
+        <ul>
+            <li>Stay aware of your surroundings at all times, and trust your instincts.</li>
+            <li>Keep your distance from strangers, especially in isolated or poorly lit areas.</li>
+            <li>Learn basic self-defense techniques like pepper spray or taking self-defense classes.</li>
+            <li>Carry a personal alarm or whistle, which can startle potential attackers and attract help.</li>
+            <li>Walk confidently and with purpose; good postu
+                e and eye contact can deter trouble.</li>
+            <li>Share your location with a trusted friend or family member when going out, and establish check-in times.</li>
+            <li>Avoid distractions like excessive smartphone use while walking alone.</li>
+            <li>Trust your gut feeling; if something feels off or unsafe, remove yourself from the situation.</li>
+            <li>If confronted, use your voice loudly and assertively to attract attention and deter attackers.</li>
+            <li>Always have local emergency numbers saved on your phone and readily accessible.</li>
+        </ul>
+        <p>Your safety is paramount; be prepared, stay vigilant, and stay safe.</p>
+    </div>
+    <div class="rights">
+    <header>
+        <h1>Women's Rights Information</h1>
+    </header>
+
+    <div class="rights-info">
+        <h2>Women's rights are fundamental human rights that every woman is entitled to. These rights include:</h2>
+        <ul>
+            <li><span class="highlighted">Equality</span>: Women have the right to equal treatment and opportunities in all aspects of life, including education, employment, and leadership roles.</li>
+            <li><span class="highlighted">Freedom And Discrimination</span>: Women should not face discrimination based on their gender. Discriminatory practices in the workplace, society, or any other area are unacceptable.</li>
+            <li><span class="highlighted">Healthcare</span>: Women have the right to access quality healthcare services, including reproductive health and family planning.</li>
+            <li><span class="highlighted">Education</span>:Every woman has the right to education. Access to quality schooling is crucial for personal development and empowerment.</li>
+            <li><span class="highlighted">Political Participation</span>: Women have the right to participate in political processes and leadership roles at local, national, and international levels.</li>
+            <li><span class="highlighted">Safety And security</span>: Women deserve safety and protection from violence, harassment, and abuse. Laws and support systems should be in place to safeguard their well-being.</li>
+            <li><span class="highlighted">Family Rights</span>: Women have the right to make decisions about their own bodies and family planning. This includes the right to choose whether or when to have children.</li>
+            <li><span class="highlighted">Economic Empowerment</span>: Women should have the same economic opportunities as men, including equal pay for equal work and access to financial resources.</li>
+            <li><span class="highlighted">Legal Rights</span>: Women should be protected by the law and have access to justice. Legal systems should address issues like domestic violence and discrimination.</li>
+            <li><span class="highlighted">Freedom Of Expression</span>: Women have the right to express their opinions and ideas without censorship or fear of retaliation.</li>
+            <li><span class="highlighted">Social And Cultural Rights</span>: Women should enjoy their cultural and social rights, which includes participating in cultural, artistic, and recreational activities.</li>
+            <li><span class="highlighted"> Access to Justice</span>: Women have the right to seek justice and hold perpetrators of gender-based violence and discrimination accountable. Legal systems should be accessible and responsive to their needs.</li>
+            <li><span class="highlighted">Protection of Women Human Rights Defenders</span>: Women who advocate for women's rights and gender equality should be protected from harassment, violence, and retaliation for their activism.</li>
+        </ul>
+    </div>
+</div>
+</section>
+<section id="contact">
+<div class="center-table">
+    <table> <!-- You can remove the border attribute if you don't want a border -->
+        <tr>
+            <th>Woman Helpline</th>
+            <th>Numbers</th>
+        </tr>
+        <tr>
+            <td>Woman Helpline Domestic Abuse</td>
+            <td>181</td>
+        </tr>
+        <tr>
+            <td>Police</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>National Commison for Woman</td>
+            <td>011-26942369</td>
+        </tr>
+        <tr>
+            <td>Delhi Commison For Woman</td>
+            <td>011-23378044</td>
+        </tr>
+        <tr>
+            <td>Woman Helpline(All India)</td>
+            <td>0191</td>
+        </tr>
+        <tr>
+            <td>Woman Helpline(All India)</td>
+            <td>0191</td>
+        </tr>
+    </table>
+    </div>
+</section>
+
+<section id="discord">
+<div class="info" >
+<h2>Fill the Form To Join Discord</h2>
+    <form action="https://discord.gg/vZB94g8C" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

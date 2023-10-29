@@ -1,0 +1,301 @@
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #363634; /* Set your desired background color */
+    height: 40px; /* Decreased the height to 30px */
+    padding:5px 0; /* Decreased the top and bottom padding */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    text-align: left;
+    display: inline;
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Add styling for the content sections below the fixed navbar */
+section {
+
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #dfeaf3;
+    color: black;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.header-image {
+    max-width: 150px; /* Adjust the image width as needed */
+    height: auto;
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-and-image {
+    display: flex;
+    align-items: center;
+}
+
+.welcome {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+}
+
+.welcome p {
+    font-size: 34px;
+    color: black;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 500px; /* To maintain the image's aspect ratio */
+}
+
+    /* Style for the modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    /* Style for the modal content */
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 70%;
+        max-width: 500px;
+    }
+
+    /* Style for the close button */
+    .close {
+        float: right;
+        cursor: pointer;
+    }
+    #get-location-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Stack elements vertically */
+        /* height: 20vh; Fill the viewport height */
+    }
+    
+    #get-location-button {
+        background-color: #da1f80;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+
+    .self-defense-instructions {
+        text-align: center;
+        background-color:  #dfeaf3;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .self-defense-instructions h2 {
+        font-size: 30px;
+        color: #333;
+    }
+
+    .self-defense-instructions p {
+        font-size: 26px;
+        color: #ca298c;
+    }
+
+    .self-defense-instructions ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+    .self-defense-instructions li {
+        font-size: 22px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    .rights {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #dfeaf3;
+    }
+    
+    .rights header {
+        text-align: center;
+        background-color: #dfeaf3;
+        color: black;
+        padding: 20px 0;
+    }
+    
+    .rights header h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    
+    .rights-info {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .rights-info h2 {
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .rights-info ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    
+    .rights-info li {
+        font-size: 22px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    .highlighted {
+       color: rgb(174, 21, 108); /* You can choose your desired highlight color */
+        font-weight: bold; /* Optionally, you can make the text bold */
+    }
+  
+    
+  .info{
+    background-color:#dfeaf3 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh; /* Adjust this to center content vertically */
+    }
+    
+    .info h2 {
+        font-size: 24px;
+    }
+    
+    .info form {
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .info label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .info input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    
+    .info input[type="submit"] {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .info input[type="submit"]:hover {
+        background-color: #2775b6;
+    }
+    
+    .info p {
+        margin-top: 20px;
+    }
+
+    .center-table {
+        background-color:  #dfeaf3;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto; /* Center the div horizontally */
+        text-align: center; /* Center the table inside the div horizontally */
+        height: 50vh;
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse; /* Collapse borders for a cleaner look */
+    }
+
+
+    td {
+        width: 50%;
+        border: 1px solid black; /* Add a border to all cells */
+        padding: 15px; /* Add padding for spacing */
+        font-size: 18px;
+        font-weight: bold;
+    }
+    th {
+        width: 50%;
+        border: 1px solid black; /* Add a border to all cells */
+        padding: 15px; /* Add padding for spacing */
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    tr:not(:last-child) {
+        border-bottom: 1px solid black; /* Add a bottom border to all rows except the last one */
+    }
+    
+    
+    
+    
+    
+    
+  
